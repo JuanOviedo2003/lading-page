@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* 
+    Error con margener en los parrafoz, siempre se resetea con el selector * 
+*/
+html,body{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Lato" , sans-serif;
+}
+
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+*{
+    scrollbar-width: none;
+    scrollbar-color: #a1a1a1 #e8e8e8;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+*::-webkit-scrollbar-track {
+    background: #e8e8e8;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #a1a1a1;
+    border-radius: 2px;
+    border: -9px solid #2b2b2b;
+}
+
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 136, 255);
+    height: 100vh;
+    background-image: url("https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2022/06/03/2767377.jpeg");
+    background-repeat: no-repeat;
+    background-position: 40% 40%;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+div > nav > img{
+    width: 40px;
+}
+
+.header-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-links > a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.header-links > a:hover{
+    border-top: 1.5px solid #fff;
+}
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50% 0px 20px;
+    height: 90%;
+    align-items: flex-start;
+    justify-content: center;
+    color: #ffff;
+}
+
+.header_button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    color:#ffff;
+    background-color: #7300ff;
+    transition: .5s;
+}
+
+.header_button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+.body_father{
+    background-color: aliceblue;
+}
+
+.body_one_{
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.body_one_text{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 55px 90px 0px 90px;
+    text-align: center;
+}
+
+.body_one_child{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.body_one_child > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
+.body_one_child > div > img{
+    width: 60px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body_two_{
+    background-color: rgb(242, 242, 242);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.body_two_childOne , .body_two_childTwo{
+    display: flex;
+    height: 40%;
+    width: 80%;
+}
+
+.body_two_childOne-text, .body_two_childTwo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.lista {
+    list-style: none;
+	padding-left: 2rem;
+	background-image: url(../imagenes/barrasListas.png);
+	background-position: 0 50%;
+	background-size: 1.3rem 1.3rem;
+	background-repeat: no-repeat;
+    margin: 4px 0px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{    box-shadow:-2px 6px 20px 5px rgb(0 0 0 / 15%)}
+.footer_section-one{
+    background-color: #fff;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenPerfil-footer{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer_section-two{
+    background-color: #fff;
+    height: 20vh;
+}
